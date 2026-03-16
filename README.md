@@ -12,7 +12,7 @@ Flutter アプリ共通 UI コンポーネントパッケージ。
 dependencies:
   app_ui_kit:
     git:
-      url: https://github.com/wroc1757/app_ui_kit.git
+      url: https://github.com/wroc1757/app_ui_kit-public.git
       ref: v1.0.0
 ```
 ```dart
