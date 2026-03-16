@@ -1,0 +1,19 @@
+name: app_ui_kit
+description: "Shared UI components for Flutter apps"
+version: 1.0.0
+
+environment:
+  sdk: ^3.11.1
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
