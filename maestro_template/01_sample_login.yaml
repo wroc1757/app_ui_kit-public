@@ -1,0 +1,33 @@
+appId: com.example.yourApp  # ← 自分のアプリIDに変更
+---
+# サンプル: ログイン → メイン画面
+#
+# カスタマイズ方法:
+#   1. appId を自分のアプリに変更
+#   2. テキストやセレクタをアプリのUIに合わせる
+#   3. run_regression.sh にフローを登録
+
+- launchApp:
+    clearState: true
+
+# OS権限ダイアログ（通知等）を自動処理
+- tapOn:
+    text: "許可"
+    optional: true
+
+# ログイン画面が表示されるのを待つ
+# - extendedWaitUntil:
+#     visible: "ログイン"
+#     timeout: 10000
+
+# ログイン操作（アプリに合わせて修正）
+# - tapOn: "メールアドレス"
+# - inputText: "test@example.com"
+# - tapOn: "パスワード"
+# - inputText: "password123"
+# - tapOn: "ログイン"
+
+# メイン画面が表示されるのを確認
+# - extendedWaitUntil:
+#     visible: "ホーム"
+#     timeout: 10000
