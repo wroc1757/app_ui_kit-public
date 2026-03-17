@@ -19,6 +19,13 @@ dependencies:
 import "package:app_ui_kit/app_ui_kit.dart";
 ```
 
+## ビジュアルリグレッションテスト
+
+`maestro_template/` に Maestro + vrc.py によるスクショ比較テストのテンプレートがあります。
+新しいアプリに導入する際は `maestro_template/` をプロジェクトの `.maestro/` にコピーしてください。
+
+詳細: [maestro_template/README.md](maestro_template/README.md)
+
 ## 新しいコンポーネントを追加するとき
 
 1. `lib/src/` 以下に実装
