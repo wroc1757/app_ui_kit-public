@@ -6,6 +6,12 @@ appId: com.example.yourApp  # ← 自分のアプリIDに変更
 #   1. appId を自分のアプリに変更
 #   2. テキストやセレクタをアプリのUIに合わせる
 #   3. run_regression.sh にフローを登録
+#
+# ⚠️ Flutter アプリの場合:
+#   - テキストマッチは正規表現を使う: text: ".*ログイン.*"
+#   - inputText 後は scroll でキーボードを閉じる（hideKeyboard は非対応）
+#   - 要素が見つからない場合は maestro hierarchy でツリーを確認
+#   - 詳細は README.md の「Flutter アプリでの注意点」を参照
 
 - launchApp:
     clearState: true
@@ -27,7 +33,14 @@ appId: com.example.yourApp  # ← 自分のアプリIDに変更
 # - inputText: "password123"
 # - tapOn: "ログイン"
 
+# Flutter アプリの場合: inputText 後にスクロールでキーボードを閉じる
+# - scroll
+
 # メイン画面が表示されるのを確認
 # - extendedWaitUntil:
 #     visible: "ホーム"
 #     timeout: 10000
+
+# Flutter アプリの場合: 正規表現で部分マッチ
+# - assertVisible:
+#     text: ".*ホーム.*"
